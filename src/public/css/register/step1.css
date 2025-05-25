@@ -1,0 +1,242 @@
+/* 背景設定 */
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* メインコンテナ */
+.frame-452 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+
+    position: absolute;
+    width: 580px;
+    height: 845px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+/* タイトル周り */
+.frame-454 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 195px;
+    height: 132px;
+}
+
+/* ロゴ */
+.pigly-logo {
+    width: 188px;
+    height: 77px;
+
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    line-height: 77px;
+    letter-spacing: 0.1em;
+    color: #EC87EF;
+}
+
+/* 新規会員登録 */
+.new-member-register {
+/*    width: 195px;  */
+    height: 45px;
+
+    font-family: 'Hiragino Mincho Pro', serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    color: #333333;
+    white-space: nowrap;
+}
+
+/* ステップタイトル */
+.step1-text {
+    width: 500px;
+    height: 24px;
+
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+/* 名前・メール・パスワード共通 */
+.name-group,
+.email-group,
+.password-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 500px;
+}
+
+/* 各入力グループの高さ */
+.name-group {
+    height: 108px;
+}
+
+.email-group {
+    height: 139px;
+}
+
+.password-group {
+    height: 108px;
+}
+
+/* ラベル */
+.name-label,
+.email-label,
+.password-label {
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.name-label {
+    width: 48px;
+}
+
+.email-label {
+    width: 110px;
+}
+
+.password-label {
+    width: 80px;
+}
+
+/* 入力フィールド */
+.input-field {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 11px 10px;
+    width: 500px;
+    height: 43px;
+
+    background: #FFFFFF;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* エラーメッセージ */
+.error-message {
+    width: 500px;
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F65A5A;
+}
+
+/* メインボタン */
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+
+    background: linear-gradient(90deg, #A3A6E1 0%, #FFABD9 100%);
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+}
+
+/* ボタンテキスト */
+.button-text {
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+/* ログインリンク */
+.login-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 24px;
+    border-bottom: 1px solid #2C99FF;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.login-link-text {
+    font-family: 'Hiragino Mincho Pro', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #2C99FF;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+    .register-card {
+        width: 90%;
+        padding: 20px;
+        position: static;
+        transform: none;
+        margin: 40px auto;
+    }
+
+    .pigly-logo {
+        font-size: 40px;
+    }
+
+    .new-member-register {
+        font-size: 22px;
+    }
+
+    .step1-text {
+        font-size: 14px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+
+    .error-message {
+        width: 100%;
+    }
+}

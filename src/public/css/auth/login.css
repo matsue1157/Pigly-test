@@ -1,0 +1,86 @@
+/* 全体の背景と中央寄せ */
+body {
+    background-color: #f2f4f8;
+    font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-container form div {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #2563eb;
+}
+
+.login-container .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.login-container a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 480px) {
+    .login-container {
+        margin: 40px 20px;
+        padding: 20px;
+    }
+}

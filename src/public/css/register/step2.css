@@ -1,0 +1,203 @@
+/* 背景設定 */
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 全体のラッパー */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    position: absolute;
+    width: 580px;
+    height: 560px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 24px;
+}
+.register-step2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+
+    position: absolute;
+    width: 580px;
+    height: 560px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+/* タイトル部分 */
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 195px;
+    height: 132px;
+}
+
+.logo {
+    font-family: 'Lora';
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    color: #ec87ef;
+}
+
+.subtitle {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: #333333;
+}
+
+.step-label {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #333;
+    width: 500px;
+}
+
+/* ラベルと入力グループ */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 500px;
+}
+
+.input-label {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 入力エリア */
+.input-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    width: 500px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+.input-field {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 10px;
+    gap: 10px;
+    width: 100%;
+    height: 43px;
+    background: #ffffff;
+    border: 1px solid #e0dfde;
+    border-radius: 5px;
+}
+
+.input-field span {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 14px;
+    font-weight: 300;
+    color: #cdcdcd;
+}
+
+.input-suffix {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    display: flex;
+    align-items: flex-end;
+    height: 43px;
+}
+
+/* エラーメッセージ */
+.error-message {
+    display: none;
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 14px;
+    font-weight: 300;
+    color: #f65a5a;
+    width: 500px;
+    line-height: 21px;
+}
+
+/* ボタン */
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(90deg, #a3a6e1 0%, #ffabd9 100%);
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.main-button-text {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .register-step2-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title,
+    .subtitle,
+    .step-title {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
