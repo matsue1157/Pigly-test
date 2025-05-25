@@ -35,7 +35,7 @@ erDiagram
         timestamp updated_at
     }
 # リポジトリをクローン
-git clone https://github.com/your-username/pigly.git
+git clone git@github.com:matsue1157/Pigly-test.git
 cd pigly
 
 # 依存パッケージのインストール
@@ -98,7 +98,4 @@ php artisan key:generate
 - http://localhost/login
 # 管理画面
 - http://localhost/weight_logs
--
--
--
--
+
